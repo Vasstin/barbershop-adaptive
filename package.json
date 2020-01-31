@@ -1,0 +1,24 @@
+{
+  "name": "barbershop-adaptive",
+  "version": "1.0.0",
+  "description": "test 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vasstin/barbershop-adaptive.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vasstin/barbershop-adaptive/issues"
+  },
+  "homepage": "https://github.com/Vasstin/barbershop-adaptive#readme",
+  "devDependencies": {
+    "sass": "^1.25.0"
+  }
+}
