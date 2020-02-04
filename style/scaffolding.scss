@@ -4,7 +4,7 @@ body {
   min-width: 320px;
   font-size: 18px;
   line-height: 27px;
-  font-family: "Arial", sans-serif;
+  font-family: "PT Sans Narrow", sans-serif;
   color: #f7f4f1;
   font-style: normal;
 
@@ -12,7 +12,7 @@ body {
 }
 
 img {
-  min-width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -35,3 +35,16 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-weight: normal;
+  font-family: "PT Sans Narrow";
+  font-style: normal;
+  src: url(/fonts/PTSansNarrow-Regular.ttf);
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "PT Sans Narrow";
+  font-style: normal;
+  src: url(/fonts/PTSansNarrow-Bold.ttf);
+}
