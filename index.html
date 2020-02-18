@@ -112,7 +112,7 @@
         <ul class="advantages__item slider__list">
           <li class="advantages__item advantages__item--fast slider__item">
             <h3 class="advantages__title">Быстро</h3>
-            <p class="advantages__description">Мы делаем совю работу быстро! Два часа пролетят незаметно и вы 
+            <p class="advantages__description">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы 
               - счастливый обладатель стильной стрижки-минутки.
             </p>
           </li>
@@ -166,39 +166,44 @@
     </section>
 
     <section class="reviews">
-      <h2 class="reviews__title">Отзывы о нас</h2>
-      <a href="#" class="reviews__write button">Оставить свой</a>
-      <div class="reviews__list slider__list">
-        <blockquote class="reviews__item slider__item">
-          <p class="reviews__author-picture"><img src="#" width="50px" height="33px"
-            alt="Фото Тревиса Баркера" 
-            class="reviews__author-image"></p>
-            <cite class="reviews__author-name">Тревис Баркер</cite>
-            <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, 
-              чтобы было видно новую татуровку!</p>
-        </blockquote>
-        <blockquote class="reviews__item slider__item">
-          <p class="reviews__author-picture"><img src="#" width="50px" height="33px"
-            alt="Фото Джона Сита" 
-            class="reviews__author-image"></p>
-            <cite class="reviews__author-name">Джон Смит</cite>
-            <p class="reviews__text">Отличную стрижку мне сделали ребята.</p>
-        </blockquote>
-        <blockquote class="reviews__item slider__item">
-          <p class="reviews__author-picture"><img src="#" width="50px" height="33px"
-            alt="Фото Иван Бородайло" 
-            class="reviews__author-image"></p>
-            <cite class="reviews__author-name">Иван Бородайло</cite>
-            <p class="reviews__text">В Бородинском ваша борода в надежных руках!</p>
-        </blockquote>
-        <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-        <button class="reviews__next" type="button">Следующий отзыв</button>
+      <div class="reviews__wrapper">
+        <h2 class="reviews__title">Отзывы о нас</h2>
+        <a href="#" class="reviews__write button">Оставить свой</a>
+        <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" >
+        <input class="slider__input" type="radio" name="reviews" id="reviews-input-2" checked>
+        <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
+        <div class="reviews__list slider__list">
+          <blockquote class="reviews__item reviews__item--first slider__item">
+            <p class="reviews__author-picture"><img src="/img/travis.jpg" width="50px" height="33px"
+              alt="Фото Тревиса Баркера" 
+              class="reviews__author-image"></p>
+              <cite class="reviews__author-name">Тревис Баркер</cite>
+              <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, 
+                чтобы было видно новую татуровку!</p>
+          </blockquote>
+          <blockquote class="reviews__item reviews__item--second slider__item">
+            <p class="reviews__author-picture"><img src="/img/travis.jpg" width="50px" height="33px"
+              alt="Фото Джона Сита" 
+              class="reviews__author-image"></p>
+              <cite class="reviews__author-name">Джон Смит</cite>
+              <p class="reviews__text">Отличную стрижку мне сделали ребята.</p>
+          </blockquote>
+          <blockquote class="reviews__item reviews__item--third slider__item">
+            <p class="reviews__author-picture"><img src="/img/travis.jpg" width="50px" height="33px"
+              alt="Фото Иван Бородайло" 
+              class="reviews__author-image"></p>
+              <cite class="reviews__author-name">Иван Бородайло</cite>
+              <p class="reviews__text">В Бородинском ваша борода в надежных руках!</p>
+          </blockquote>
+          <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+          <button class="reviews__next" type="button">Следующий отзыв</button>
+        </div>
+        <p class="reviews__toggles">
+          <label for="reviews-input-1" class="slider__toggles">1</label>
+          <label for="reviews-input-2" class="slider__toggles">2</label>
+          <label for="reviews-input-3" class="slider__toggles">3</label>
+        </p>
       </div>
-      <p class="reviews__toggles slider__toggles">
-        <button class="slider__toggle" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
-      </p>
     </section>
   </main>
 
