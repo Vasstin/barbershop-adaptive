@@ -1,16 +1,23 @@
+
 .news {
+    background-color: #fff;
+    border-bottom: 1px solid #e5ddd5;
+    padding-bottom: 25px;
+}
+
+.news__wrapper {
     width: 320px;
 
     color: #000000;
-    background-color: #fff;
 
-    padding-top: 37px;
+    padding-top: 34px;
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto;
 }
 
 .news__title {
+    margin-top: 37px;
     margin-bottom: 10px;
     font-size: 30px;
     font-weight: bold;
@@ -38,7 +45,7 @@
 }
 
 .news__item:nth-child(1) {
-    border-bottom: 1px solid #e5ddd5;;
+    border-bottom: 1px solid #e5ddd5;
 }
 
 .news__item:nth-child(3) {
@@ -102,26 +109,54 @@
 
 
 @media (min-width: $tablet-width) {
-    .news {
+    .news__wrapper {
         width: 640px;
-      
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .news__title {
+        margin-top: 51px;
+        margin-bottom: 36px;
+
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 30px;
+        text-align: left;
     }
 
     .news__list {
         position: relative;
         display: flex;
         flex-wrap: wrap;
+        align-items: flex-start;
+        border-bottom: 1px solid #e5ddd5;
     }
 
     .news__item {
         width: 280px;
     }
+    
+    .news__item:nth-child(1) {
+        margin-right: 40px;
+        border-bottom: none;
+    }
+
+    .news__date::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 52px;
+
+    }
 
     .news__to-all {
         position: absolute;
         display: block;
-        width: 160px;
+        top: -75;
         right: 0;
+
+        width: 160px;
         padding: 12px 0;
 
         font-size: 18px;
@@ -129,4 +164,31 @@
         line-height: 24px;
         
     }
+}
+
+@media (min-width: $desktop-width) {
+    .news__wrapper {
+        width: 960px;
+        padding-top: 131px;
+    }
+
+    .news__title {
+        margin-top: 0;
+        margin-left: 71px;
+    }
+
+    .news__list {
+        justify-content: space-between;
+
+    }
+
+    .news__item:nth-child(1) {
+        margin-right: 0;
+    }
+
+    .news__item:nth-child(3) {
+        display: flex;
+        
+    }
+    
 }
